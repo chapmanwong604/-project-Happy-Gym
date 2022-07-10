@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Gym</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="inputmanual.css">
+  <link rel="stylesheet" href="youtube.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> <!-- Orbitron Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"/> <!-- Rock Salt Font -->
+</head>
+
+<body>
+  <div id="homepage">
+    <nav></nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <span id="app-name">Happy Gym</span>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            
+            <div class="profile-image"></div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Hi! <span class="profile-displayname"></span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item">Height: <span class="profile-height"></span> </a></li>
+                <li><a class="dropdown-item">Weight: <span class="profile-weight"></span></a></li>
+                <li><a class="dropdown-item">Total Hours: <span class="profile-totalhours">0</span></a></li>
+                <li><a class="dropdown-item" href="/profile.html">More Details......</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="/gymroom.html">Information of Fitness Rooms</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item logout">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <div id="content-under-nav">
+      <!-- inputmanual.html -->
+      <div class="input-container container-fluid">
+        <h2 class="my-3 py-3 container-fluid">Manual Input Activities</h2>
+
+        <form action="/recordsports" method="POST" id="manual-input-form">
+          <div>
+            <label class="input-box row">
+              <span class="col-6">Sports Duration (minutes):</span>
+              <input class="col-6" type="number" name="timer" placeholder="e.g. 30" min="1" max="1440" required />
+            </label>
+          </div>
+          <div>
+            <label class="input-box row">
+              <span class="col-6">Sports Type:</span>
+              <!-- <input type="text" name="sportstype" placeholder="e.g. football" required /> -->
+              <!-- <div> -->
+                <select class="col-6" name="sportstype" class="sportstype">
+                  <option value="Swimming">Swimming</option>
+                  <option value="Football">Football</option>
+                  <option value="Hiking">Hiking</option>
+                  <option value="Volleyball">Volleyball</option>
+                  <option value="Tennis">Tennis</option>
+                  <option value="HIIT">HIIT</option>
+                  <option value="Yoga">Yoga</option>
+                  <option value="Training">Training</option>
+                  <option value="Other">Other</option>
+                </select>
+              <!-- </div> -->
+
+            </label>
+          </div>
+          <div class="inputControls">
+            <input type="reset" id="resetInput" value="Clear" />
+            <input type="submit" id="submitInput" value="Submit" />
+          </div>
+        </form>
+      </div>
+      <!-- inputmanual.html -->
+
+
+      <!-- youtube.html -->
+
+      <div class="pb-5 youtube-container container-fluid">
+        
+        <!-- Video Select Box -->
+        <h2 class="my-3 py-3 container-fluid">Video Input Activities</h2>
+        <div class="selectVideoContainer row">
+          <button class="selectVideo col-xl-2 col-lg-4 col-6"><img src="https://i0.hippopx.com/photos/817/712/980/dance-people-theatre-monologue-preview.jpg"><div class="active-box"></div><div class="darkened-box"></div>Dance</button> <!-- 8DZktowZo_k -->
+          <button class="selectVideo col-xl-2 col-lg-4 col-6"><img src="https://s34824.pcdn.co/en-CA/blog/wp-content/uploads/2021/05/cq5dam_web__1280_1280-5.jpg"><div class="active-box"></div><div class="darkened-box"></div>HIIT</button> <!-- LwFHrTrBnu0 -->
+          <button class="selectVideo col-xl-2 col-lg-4 col-6"><img src="https://images.livemint.com/img/2022/02/01/689x388/iStock-1137177479_1643695985910_1643695996770.jpg"><div class="active-box"></div><div class="darkened-box"></div>Skipping</button> <!-- 1BZM2Vre5oc -->
+          <button class="selectVideo col-xl-2 col-lg-4 col-6"><img src="https://www.maxpixel.net/static/photo/1x/Yoga-Pose-Yoga-Teacher-Yoga-Yoga-Studio-Yoga-Class-7026274.jpg"><div class="active-box"></div><div class="darkened-box"></div>Yoga</button> <!-- tbz14K0lOZs -->
+          <button class="selectVideo col-xl-2 col-lg-4 col-6"><img src="https://opstudiohk.com/wp-content/uploads/2021/08/beginner-stretches.jpg"><div class="active-box"></div><div class="darkened-box"></div>Body Stretching</button> <!-- ih072euhEFw -->
+          <button class="selectVideo col-xl-2 col-lg-4 col-6"><img src="https://cdn.pixabay.com/photo/2019/11/25/11/39/boxing-4651812_1280.jpg"><div class="active-box"></div><div class="darkened-box"></div>Boxing</button> <!-- jCTEVKRTuS8 -->
+        </div>
+        <!-- Video Select Box -->
+        
+        <!-- Youtube and Stop Watch -->
+        <div class="video-stopwatch-container row">
+          <!-- Youtube Activities -->
+  
+          <div class="my-4 videoContainer container-fluid col-lg-6 col-md-12"> <!-- embed-responsive-21by9 -->
+  
+            <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+            <div id="player"></div>
+          </div>
+  
+          <!-- Youtube Activities -->
+  
+          <!-- Stop Watch -->
+  
+          <div class="my-4 stopwatchContainer container-fluid col-lg-5 col-md-12">
+            <div class="timerDisplay col-12">
+              00 : 00 : 00 : 000
+            </div>
+  
+            <div class="stopwatchControls">
+              <button id="startTimer" class="timerButton">Start</button>
+              <button id="pauseTimer" class="timerButton">Pause</button>
+              <button id="resetTimer" class="timerButton">Reset</button>
+              <button id="submitTimer" class="timerButton">Submit</button>
+            </div>
+          </div>
+  
+          <!-- Stop Watch -->
+        </div>
+        <!-- Youtube and Stop Watch -->
+        
+      </div>
+
+
+
+
+      <!-- youtube.html -->
+    </div>
+  </div>
+
+
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- <script src="homepage.js"></script> -->
+<script src="nav.js"></script>
+<script src="inputmanual.js"></script>
+<script src="youtube.js"></script>
+
+
+</html>

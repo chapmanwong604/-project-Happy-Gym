@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="youtube.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> <!-- Orbitron Font -->
+</head>
+
+<body>
+    <div class="youtubeContainer">
+        <!-- Youtube Activities -->
+
+        <div class="selectVideoContainer">
+            <button class="selectVideo">Yoga</button> <!-- tbz14K0lOZs -->
+            <button class="selectVideo">Dance</button> <!-- 8DZktowZo_k -->
+            <button class="selectVideo">HIIT</button> <!-- LwFHrTrBnu0 -->
+            <button class="selectVideo">Skipping</button> <!-- 1BZM2Vre5oc -->
+            <button class="selectVideo">Body Stretching</button> <!-- ih072euhEFw -->
+            <button class="selectVideo">Boxing</button> <!-- jCTEVKRTuS8 -->
+        </div>
+        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+        <div id="player"></div>
+        <!-- Youtube Activities -->
+
+        <!-- Stop Watch -->
+
+        <div class="stopwatchContainer">
+            <div class="timerDisplay">
+                00 : 00 : 00 : 000
+            </div>
+
+            <div class="stopwatchControls">
+                <button id="startTimer" class="timerButton">Start</button>
+                <button id="pauseTimer" class="timerButton">Pause</button>
+                <button id="resetTimer" class="timerButton">Reset</button>
+                <button id="submitTimer" class="timerButton">Submit</button>
+            </div>
+        </div>
+
+        <!-- Stop Watch -->
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="youtube.js"></script>
+
+</body>
+
+</html>

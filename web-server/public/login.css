@@ -1,0 +1,103 @@
+body{
+
+    background-color: #dbe5eb;
+    position: relative;
+
+
+}
+
+#bg-image{
+    z-index: -100;
+    position:absolute;
+    filter: blur(10px) grayscale(40%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+
+}
+
+
+#page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    background-color:#68ffff ;
+    flex-direction: column;
+    border:  solid #7696af;
+    border-radius:  1.5rem;
+    width: max-content;
+    box-shadow: 5px 5px 0px rgba(63,107,169, 0.5);
+}
+
+label{
+    display: block;
+    padding: 1rem;
+    
+}
+
+input{
+    width:100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    border:  solid #7696af;
+    background-color: #fbfcfd;
+    color:#7696af;
+    /* font-family: 'Rock Salt', cursive; */
+    outline-color: white;
+}
+
+#submit{
+    background-color: #7696af;
+    font-weight:bold;
+    color: #fbfcfd;
+    font-size: 1rem;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing:3px
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom: 2rem;
+    font-family: 'Rock Salt', cursive;
+    color: #fbfcfd;
+    text-shadow: 5px 5px 0px rgba(63,107,169, 0.5);
+    letter-spacing:3px;
+}
+#register{
+    margin: 1.5rem;
+    color:#7696af;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing:1px;
+}
+
+a:link {
+    color: #7696af;
+}
+
+a:visited {
+    color: #7696af;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width : 768px){
+    #bg-image{
+        overflow: clip;
+        width: 80vw;
+        height: 80vh;
+    }
+}

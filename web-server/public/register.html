@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+        <div id="bg-image"><img src="https://thedailyguardian.com/wp-content/uploads/2020/12/Return_of_Sports.jpg">
+        </div>
+        <div id="page-container">
+            <h1>Happy Gym ! Let join us !</h1>
+            <h2>Registration</h2>
+            <div id="reg-container">
+                <form id='reg-form' action="/register" method="post">
+                    <label>
+                        <span>Username:</span>
+                        <input name="username" type="text" placeholder="Username">
+                    </label>
+                    <label>
+                        <span>Password:</span>
+                        <input name="password" type="password" placeholder="Password">
+                    </label>
+                    <label>
+                        <span>Re-enter Password:</span>
+                        <input name="password2" type="password" placeholder="Input password again" />
+                    </label>
+                    <label>
+                        <span>Display Name:</span>
+                        <input name="displayname" type="text" placeholder="Display Name">
+                    </label>
+                    <label>
+                        <span>Weight(kg):</span>
+                        <input name="weight" type="number" placeholder="E.g. 85" min="1" max="500">
+                    </label>
+                    <label>
+                        <span>Height(cm):</span>
+                        <input name="height" type="number" placeholder="E.g. 183" min="1" max="300">
+                    </label>
+                    <label>
+                        <span>Gender:</span>
+                        <input type="radio" id="male" name="gender" value="M">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="F">
+                        <label for="female">Female</label>
+                    </label>
+                    <label>
+                        <span>Profile Photo (optional):</span>
+                        <input name="image" type="file" accept="image/*" />
+                    </label>
+                    <input id="submit" type="submit" value="Register" />
+
+                </form>
+                <div id="login">Already have an account ? <a href="login.html">Login now !</a></div>
+            </div>
+        </div>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="register.js"></script>
+
+</html>

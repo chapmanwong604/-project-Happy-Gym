@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Input Activities</title>
+    <link rel="stylesheet" href="inputmanual.css">
+</head>
+
+<body>
+    <div class="input-container">
+        <h1>Manual Input Activities</h1>
+
+        <form action="/recordsports" method="POST" id="manual-input-form">
+            <div>
+                <label class="input-box">
+                    <span>Sports Duration(minutes):</span>
+                    <input type="number" name="timer" placeholder="e.g. 30" min="1" max="1440" required />
+                </label>
+            </div>
+            <div>
+                <label class="input-box">
+                    <span>Sports Type:</span>
+                    <input type="text" name="sportstype" placeholder="e.g. football" required />
+                </label>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Clear" />
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="inputmanual.js"></script>
+
+</html>

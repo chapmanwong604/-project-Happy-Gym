@@ -1,0 +1,62 @@
+body{
+    background-color: #fbfcfd;
+}
+
+h1{
+    font-family: 'Oleo Script', cursive;
+    text-align: center;
+    color: #7696af;
+}
+
+.event-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.event{
+    width: 600px;
+    border: solid #7696af;
+    background-color: #fbfcfd;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #7696af;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+#template{
+    display: none;
+}
+
+.attendBtn{
+    border-radius: 1rem;
+    background-color: #7696af;
+    font-weight:bold;
+    color: #fbfcfd;
+    margin: 1rem;
+}
+
+button:disabled,
+button[disabled]{
+  color: lightgrey;
+  background-color: #ffffff;
+}
+
+button:disabled,
+button[disabled]:hover{
+  color: black;
+}
+
+.attendBtn:hover{
+    color:#4effff;
+}
+
+span{
+    font-weight: bold;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Gym</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="sportslog.css" />
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:wght@100&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+  </head>
+  <body>
+    <nav></nav>
+
+    <div id="Biggest-Container">
+      <h1>User Profile</h1>
+      
+
+      <div id="Profile-Container">
+        <div id="Main-container">
+
+            
+            <div id="ProfileDisplayContainer">
+              <div id="ProfileImageContainer">
+                <div id="profile-image"></div>
+              </div>
+              <div id="ProfileInfoContainer">
+                <div id="profile-displayName"></div>
+                <div id="profile-gender"></div>
+                <div id="profile-weight"></div>
+                <div id="profile-height"></div>
+                <button id="Edit-Profile"><i class="bi bi-pencil-square"></i></button>
+              </div>
+              <div id="UpdateFormContainer">
+                <form id="profile-update-form" action="/editProfile" method="patch">
+  
+                  
+                  <label class="ImageButton">
+                    
+                    <input
+                      id="image2"
+                      name="editImage"
+                      type="file"
+                      accept="image/*"
+                    />
+                    <i class="bi bi-image"></i>
+                  </label>
+      
+                  <label>
+                    <span>Display Name:</span>
+                    <input
+                      class="White"
+                      id="displayname2"
+                      name="editDisplayname"
+                      type="text"
+                      placeholder="Display Name"
+                    />
+                  </label>
+                  <label>
+                    <span>Weight(kg):</span>
+                    <input
+                      class="White"
+                      id="weight2"
+                      name="editWeight"
+                      type="number"
+                      placeholder="E.g. 85"
+                      min="1" 
+                      max="500"
+                    />
+                  </label>
+                  <label>
+                    <span>Height(cm):</span>
+                    <input
+                      class="White"
+                      id="height2"
+                      name="editHeight"
+                      type="number"
+                      placeholder="E.g. 183"
+                      min="1"
+                      max="300"
+                    />
+                  </label>
+      
+                  <input id="EditSubmit" type="submit" value="Update" />
+                </form>
+              </div>
+            </div>
+
+
+
+        </div>
+      </div>
+
+      <h1>Sports Log</h1>
+      <div id="SportsLog-And-Chart-Container">
+        <div id="ContainerAllChart">
+          <div id="ContainerLineChart">
+            <canvas id="myChart" width="700" height="400"></canvas>
+          </div>
+          <div id="ContainerPieChart">
+            <canvas id="pieChart" width="5" height="5"></canvas>
+          </div>
+        </div>
+
+        <div class="sports-log-container">
+          <div id="No-Sports-Record">No Record is found.</div>
+          <!-- <div class="sports-log">
+                    <div class="id log-info">Sports Log No. ${sportsLog.id}</div>
+                    <div class="date log-info">Date: ${sportsLog.date}</div>
+                    <div class="timer log-info">Duration: ${sportsLog.timer} minutes</div>
+                    <div class="sports-type log-info">Sports Type: ${sportsLog.sports_type}</div>
+                </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src ='/socket.io/socket.io.js'></script>
+  <script src="nav.js"></script>
+  <script src="sportslog.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+  <script src="chart.js"></script>
+  <script src="profile.js"></script>
+</html>

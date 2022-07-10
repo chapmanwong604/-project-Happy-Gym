@@ -1,0 +1,49 @@
+nav .nav-profile-image > img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+#navbar-left{
+    width:50%;
+    height:100%;
+}
+
+#navbar-left >a{
+    color:#7696af !important; 
+    margin-left: 1rem;
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+#navbar-right{
+    width:50%;
+}
+
+.app{
+   background: #dbe5eb;
+}
+
+.navbar-nav .dropdown-menu{
+    position: absolute;
+}

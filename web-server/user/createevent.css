@@ -1,0 +1,291 @@
+body {
+    --cyan: #4effff;
+    --light-cyan: #68ffff;
+    --bluish-grey: #7696af;
+    --light-bluish-grey: #bcceda;
+    --grey: #dbe5eb;
+    --white: #fbfcfd;
+    margin: 0;
+}
+
+/* Experiement, Sweeet Alert Message */
+.error-swal {
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.success-swal {
+    text-transform: uppercase;
+    color: green;
+}
+/* Experiement, Sweeet Alert Message */
+
+#content-under-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 2%;
+}
+
+@media (max-width: 992px) {
+    #content-under-nav {
+        margin: 0;
+    }
+}
+
+.input-event-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 30px;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: var(--white);
+    background-color: var(--grey);
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+}
+
+/* @media (min-width: 769px){
+    .event-form {
+        min-height: 510px;
+    }
+} */
+
+h2 {
+    text-transform: capitalize;
+    color: var(--bluish-grey);
+    text-align: center;
+    transition: color 0.5s, text-shadow 1s;
+    margin: 0;
+}
+
+h2:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--bluish-grey),
+        0 0 20px var(--bluish-grey),
+        0 0 40px var(--bluish-grey);
+}
+
+
+#create-event-form {
+    width: 80%;
+}
+
+.input-box {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    color: var(--bluish-grey);
+    font-size: clamp(0.6rem, 2vw, 1rem);
+}
+
+span {
+    color: var(--bluish-grey);
+    transition: color 0.5s, text-shadow 1s;
+}
+
+span:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--bluish-grey),
+        0 0 20px var(--bluish-grey),
+        0 0 40px var(--bluish-grey);
+}
+
+label input {
+    text-transform: lowercase;
+    background-color: var(--grey);
+    border-color: var(--bluish-grey);
+    border-width: 2px;
+    border-radius: 10px;
+    transition: color 0.5s, border-color 0.5s, text-shadow 1s;
+}
+
+label input:hover::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+    color: var(--white);
+}
+
+label input[type=date]::-webkit-datetime-edit-text,
+input[type=date]::-webkit-datetime-edit-year-field,
+input[type=date]::-webkit-datetime-edit-month-field,
+input[type=date]::-webkit-datetime-edit-day-field {
+    color: var(--bluish-grey);
+    transition: color 0.5s, border-color 0.5s, text-shadow 1s;
+}
+
+label input[type=date]::-webkit-datetime-edit-text:hover,
+input[type=date]::-webkit-datetime-edit-year-field:hover,
+input[type=date]::-webkit-datetime-edit-month-field:hover,
+input[type=date]::-webkit-datetime-edit-day-field:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--bluish-grey),
+        0 0 20px var(--bluish-grey),
+        0 0 40px var(--bluish-grey);
+}
+
+label input[type=time]::-webkit-datetime-edit-text,
+input[type=time]::-webkit-datetime-edit-ampm-field,
+input[type=time]::-webkit-datetime-edit-hour-field,
+input[type=time]::-webkit-datetime-edit-minute-field {
+    color: var(--bluish-grey);
+    transition: color 0.5s, border-color 0.5s, text-shadow 1s;
+}
+
+label input[type=time]::-webkit-datetime-edit-text:hover,
+input[type=time]::-webkit-datetime-edit-ampm-field:hover,
+input[type=time]::-webkit-datetime-edit-hour-field:hover,
+input[type=time]::-webkit-datetime-edit-minute-field:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--bluish-grey),
+        0 0 20px var(--bluish-grey),
+        0 0 40px var(--bluish-grey);
+}
+
+label input[type=date]::-webkit-datetime-edit-text,
+input[type=date]::-webkit-datetime-edit-year-field,
+input[type=date]::-webkit-datetime-edit-month-field,
+input[type=date]::-webkit-datetime-edit-day-field {
+    color: var(--bluish-grey);
+}
+
+label input::placeholder {
+    color: var(--bluish-grey);
+    /* letter-spacing: 0.2rem; */
+}
+
+label input:hover {
+    border-color: var(--white);
+    box-shadow: 0 0 10px var(--bluish-grey);
+    text-shadow: 0 0 10px var(--bluish-grey);
+}
+
+label select {
+    text-transform: lowercase;
+    color: var(--bluish-grey);
+    background-color: var(--grey);
+    border-color: var(--bluish-grey);
+    border-width: 2px;
+    border-radius: 10px;
+    transition: color 0.5s, border-color 0.5s, text-shadow 1s;
+}
+
+label select:hover {
+    color: var(--white);
+    border-color: var(--white);
+    /* background-color: var(--grey); */
+    box-shadow: 0 0 10px var(--bluish-grey);
+    text-shadow: 0 0 10px var(--bluish-grey);
+}
+
+.createControls {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.createControls input {
+    width: 7rem;
+    height: 7rem;
+    color: var(--white);
+    /* border: none; */
+    font-family: 'Orbitron';
+    text-align: center;
+    /* font-family: 'Rock Salt', cursive;
+    font-weight: bold; */
+    text-transform: uppercase;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    border-radius: 50%;
+    cursor: pointer;
+    /* outline: none; */
+    border-color: var(--white);
+    border-style: solid;
+    border-width: 2px;
+    transition: box-shadow 0.7s, text-shadow 0.7s;
+}
+
+@media (max-width: 768px){
+    .createControls input {
+        width: 5rem;
+        height: 5rem;
+        font-size: 0.8rem;
+    }
+}
+
+.eventButton {
+    border-color: var(--white);
+    border-style: solid;
+    border-width: 2px;
+    transition: box-shadow 0.7s, text-shadow 0.7s;
+}
+
+.eventButton:hover {
+    box-shadow: var(--cyan) 1px -1px 20px;
+    text-shadow: 0 0 10px var(--cyan),
+    0 0 20px var(--cyan);
+}
+
+#resetEvent {
+    background-color: var(--white);
+    color: var(--bluish-grey);
+    border-color: var(--bluish-grey);
+}
+#submitEvent {
+    background-color: var(--bluish-grey);
+}
+
+.event-list {
+    padding: 20px 0;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: var(--white);
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    background-color: var(--grey);
+}
+
+.event {
+    width: 400px;
+    border: solid #7696af;
+    background-color: #fbfcfd;
+    margin: 20px !important;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #7696af;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    transition: box-shadow 0.7s, border-color 0.7s, text-shadow 0.7s;
+}
+
+@media (max-width: 400px) {
+    .event{
+        font-size: 0.8rem;
+    }
+}
+
+.event:hover {
+    box-shadow: var(--cyan) 1px -1px 20px;
+    border-color: var(--white);
+}
+
+.event-info {
+    color: var(--bluish-grey);
+    transition: color 0.5s, text-shadow 1s;
+}
+
+.event-info:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--bluish-grey),
+        0 0 20px var(--bluish-grey),
+        0 0 40px var(--bluish-grey);
+}

@@ -1,0 +1,32 @@
+body {
+    --cyan: #4effff;
+    --light-cyan: #68ffff;
+    --bluish-grey: #7696af;
+    --light-bluish-grey: #bcceda;
+    --grey: #dbe5eb;
+    --white: #fbfcfd;
+    margin:0;
+}
+
+/* .profile-image > img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+} */
+
+#homepage {
+    background-color: var(--white);
+}
+
+#content-under-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 2%;
+}
+
+@media (max-width: 992px) {
+    #content-under-nav {
+        margin: 0;
+    }
+}

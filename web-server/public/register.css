@@ -1,0 +1,146 @@
+body{
+
+    background-color: #dbe5eb;
+    position: relative;
+}
+
+#bg-image{
+    z-index: -100;
+    position:absolute;
+    filter: blur(10px) grayscale(40%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+}
+
+#reg-form > label{
+    display: block;
+    margin: 1rem;
+}
+
+#reg-form {
+    text-align: center;
+    color:#7696af;
+}
+
+h1{
+    text-align: center;
+    font-size:3rem;
+
+    margin: 1.5rem;
+    font-family: 'Rock Salt', cursive;
+}
+
+h2{
+    text-align: center;
+    font-size:2rem;
+
+    margin-bottom: 2rem;
+    font-family: 'Rock Salt', cursive;
+}
+
+h1,h2{
+    color: #fbfcfd;
+    text-shadow: 0.25rem 0.25rem 0px rgba(63,107,169, 0.5);
+    letter-spacing:3px;
+}
+#page-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+label >span{
+    font-family: 'Rock Salt', cursive;
+}
+#reg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#dbe5eb ;
+    flex-direction: column;
+    border:  solid #7696af;
+    border-radius:  1.5rem;
+    width: max-content;
+    box-shadow: 4px 4px 0px rgba(63,107,169, 0.5);
+}
+
+input{
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    border:  solid #7696af;
+    background-color: #fbfcfd;
+    color:#7696af;
+    outline-color: white;
+}
+
+#submit{
+    background-color: #7696af;
+    font-weight:bold;
+    color: #fbfcfd;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing:3px
+
+}
+
+a:link {
+    color: #7696af;
+}
+
+a:visited {
+    color: #7696af;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+#login{
+    margin: 0.8rem;
+    color:#7696af;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing:1px;
+}
+
+
+@media only screen and (max-width : 768px){
+    #bg-image{
+        overflow: clip;
+        width: 80vw;
+        height: 80vh;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+
+    h1{
+        font-size: 1.5rem;
+        margin-top:  2rem;
+    }
+
+    h2{
+        font-size: 1.25rem;
+    }
+
+    #reg-form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    #reg-form > label {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+    }
+
+    #page-container{
+
+        justify-content: flex-start;
+
+    }
+}

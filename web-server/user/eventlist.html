@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Oleo+Script&display=swap"
+    rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
+    <link rel="stylesheet" href="eventlist.css">
+</head>
+
+<body>
+    <nav></nav>
+    <h1>Sports Event</h1>
+    <div class="event-list">
+        <div id="template" class="event">
+            <div>Name: <span class="event-name"></span></div>
+            <div>Date: <span class="event-date"></span></div>
+            <div>Time: <span class="event-time"></span></div>
+            <div>Location: <span class="event-location"></span></div>
+            <div>Group Size: <span class="event-group-size"></span></div>
+            <div>Current Participants: <span class="event-participant">0</span></div>
+            <button class="attendBtn">Attend</button> 
+        </div>
+    </div>
+
+
+    
+</body>
+<script src ='/socket.io/socket.io.js'></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="nav.js"></script>
+<script src="eventlist.js"></script>
+</html>

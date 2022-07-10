@@ -1,0 +1,326 @@
+/* Experiement, Sweeet Alert Message */
+.error-swal {
+    text-transform: uppercase;
+    color: crimson;
+}
+
+.success-swal {
+    text-transform: uppercase;
+    color: green;
+}
+/* Experiement, Sweeet Alert Message */
+
+.selectVideoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.selectVideo {
+    color: var(--white);
+    font-size: 1.5rem;
+    flex-grow: 1;
+    width: 100%;
+    height: 10rem;
+    background-color: transparent;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 1px;
+    position: relative;
+    filter: grayscale(100%);
+    transition: filter 0.5s, text-shadow 0.5s;
+}
+
+/* @media (min-width: 1500px) {
+    .selectVideo {
+        height: 7rem;
+    }
+} */
+
+/* Change the size of the images:*/
+@media (min-width: 1200px) {
+    .selectVideo {
+        height: 8rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .selectVideo {
+        height: 10rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .selectVideo {
+        height: 12rem;
+    }
+}
+/* Change the size of the images:*/
+
+/* Change the size of the fonts:*/
+@media (min-width: 992px) {
+    .selectVideo{
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 430px) {
+    .selectVideo {
+        font-size: 1.2rem;
+    }
+}
+/* Change the size of the fonts:*/
+
+.selectVideo:hover {
+    filter: grayscale(0%);
+    text-shadow: 0 0 10px var(--cyan),
+        0 0 20px var(--cyan),
+        0 0 40px var(--cyan),
+        0 0 80px var(--cyan),
+        0 0 120px var(--cyan);
+}
+
+.selectVideo>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -3;
+    top: 0;
+    left: 0;
+}
+
+.darkened-box {
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    z-index: -2;
+    bottom: 33.3%;
+    background-color: var(--grey);
+    opacity: 0.2;
+    filter: blur(10px);
+    transition: opacity 3s;
+    text-align: center;
+    vertical-align: center;
+}
+
+.active-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:-1;
+    background-color: var(--light-cyan);
+    opacity: 0;
+    left: 0;
+    bottom: 0;
+    transition: opacity 0.1s;
+}
+
+.active-box:active {
+    opacity: 0.5;
+}
+
+.youtube-container {
+    width: 100%;
+    overflow: auto;
+    height: 70vh;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: var(--white);
+    /* margin: 50px; */
+    /* font-family: 'Orbitron'; */
+    font-family: 'Rock Salt', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--grey);
+}
+
+.youtube-container::-webkit-scrollbar{
+    display:none;
+}
+
+/* h2 {
+    text-transform: capitalize;
+    color: var(--bluish-grey);
+    text-align: center;
+    transition: color 0.5s, text-shadow 1s;
+}
+
+h2:hover {
+    color: var(--white);
+    text-shadow: 0 0 10px var(--cyan),
+    0 0 20px var(--cyan),
+    0 0 40px var(--cyan);
+} */
+
+/* Change the size of the fonts:*/
+/* @media (max-width: 433px) {
+    h2 {
+        font-size: 1.2rem !important;
+    }
+} */
+/* Change the size of the fonts:*/
+
+.video-stopwatch-container {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    /* margin: 2rem; */
+}
+
+.videoContainer {
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* height: 35vh; */
+    /* margin: 2rem; */
+}
+
+/* Change the size of the Youtube video:*/
+/* @media (max-width: 991px) {
+    .videoContainer {
+        width: 90% !important;
+        height: 50vh !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .videoContainer {
+        height: 40vh !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .videoContainer {
+        width: 100% !important;
+        height: 30vh !important;
+    }
+} */
+/* Change the size of the Youtube video:*/
+
+.stopwatchContainer {
+    background-color: var(--light-bluish-grey);
+    /* width: 40%; */
+    /* min-width: 500px; */
+    padding: 20px 0;
+    /* padding-bottom: 50px; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 2rem; */
+}
+
+.timerDisplay {
+    position: relative;
+    width: 92%;
+    background: transparent;
+    padding: 40px 0px;
+    font-family: 'Orbitron';
+    /* font-family: 'Rock Salt', cursive;
+    font-weight: bold; */
+    color: var(--white);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    transition: text-shadow 0.7s;
+}
+
+.timerDisplay:hover {
+    text-shadow: 0px 0px 10px var(--cyan);
+}
+
+/* Change the size of the fonts:*/
+@media (max-width: 430px) {
+    .timerDisplay {
+        font-size: 1.5rem;
+    }
+}
+/* Change the size of the fonts:*/
+
+.stopwatchControls {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.stopwatchControls button {
+    width: 7.5vw;
+    height: 7.5vw;
+    color: var(--white);
+    /* border: none; */
+    font-family: 'Orbitron';
+    text-align: center;
+    /* font-family: 'Rock Salt', cursive;
+    font-weight: bold; */
+    text-transform: uppercase;
+    font-size: 1vw;
+    border-radius: 50%;
+    cursor: pointer;
+    /* outline: none; */
+}
+
+/* Change the size of the fonts:*/
+@media (max-width: 991px){
+    .stopwatchControls button {
+        width: 15vw;
+        height: 15vw;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px){
+    .stopwatchControls button {
+        width: 5rem;
+        height: 5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 430px){
+    .stopwatchControls button {
+        width: 4rem;
+        height: 4rem;
+        font-size: 0.6rem;
+    }
+}
+/* Change the size of the fonts:*/
+
+.timerButton {
+    border-color: var(--white);
+    border-style: solid;
+    border-width: 2px;
+    transition: box-shadow 0.7s, text-shadow 0.7s;
+}
+
+.timerButton:hover {
+    box-shadow: var(--cyan) 1px -1px 20px;
+    text-shadow: 0 0 10px var(--cyan),
+    0 0 20px var(--cyan);
+}
+
+#startTimer {
+    background-color: var(--white); 
+    color: var(--bluish-grey);
+    border-color: var(--bluish-grey);
+}
+
+#pauseTimer {
+    background-color: var(--light-bluish-grey); 
+}
+#resetTimer {
+    background-color: var(--light-bluish-grey); 
+}
+#submitTimer {
+    background-color: var(--bluish-grey);
+}
